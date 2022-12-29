@@ -1,7 +1,6 @@
 @import "config";
 @import "home";
 @import "menu";
-@import "//js/main.js";
 
 body {
   background: $primary-color;
@@ -28,8 +27,12 @@ header {
   width: 100%;
   padding: 1rem;
 
-  .menu-nav {
-    display: flex;
+  .nav {
+    display: inline-block;
+  }
+
+  li {
+    list-style: none;
   }
 }
 
