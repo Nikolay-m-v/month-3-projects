@@ -1,0 +1,8 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-header .header-logo-img {
+  max-width: 20rem;
+}/*# sourceMappingURL=header.css.map */

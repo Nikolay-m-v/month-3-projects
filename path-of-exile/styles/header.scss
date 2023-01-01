@@ -1,0 +1,11 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-logo {
+    &-img {
+      max-width: 20rem;
+    }
+  }
+}
