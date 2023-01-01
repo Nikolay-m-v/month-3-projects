@@ -1,10 +1,12 @@
 @import "/styles/header.css";
+@import "/styles/hero.css";
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: sans-serif;
   background: url("/imgs/wp4424513.jpg") no-repeat;
   background-size: cover;
   background-color: grey;

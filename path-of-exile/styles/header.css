@@ -24,7 +24,7 @@
 .main-header .nav-links .login-btn:hover,
 .main-header .nav-links .register-btn:hover {
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .main-header .header-logo-img {
   max-width: 25rem;
@@ -47,6 +47,6 @@
 }
 .main-header .nav-links-game-website a:hover {
   text-shadow: #fc0 1px 0 10px;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
   border-radius: 24px;
 }/*# sourceMappingURL=header.css.map */
