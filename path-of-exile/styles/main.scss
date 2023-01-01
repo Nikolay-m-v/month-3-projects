@@ -8,12 +8,11 @@ body {
   background: url("/imgs/wp4424513.jpg") no-repeat;
   background-size: cover;
   background-color: grey;
-
   transition: all 3s ease-in-out;
-  background-blend-mode: multiply;
+  background-blend-mode: luminosity;
 
   &:hover {
-    background-blend-mode: luminosity;
+    background-color: transparent;
     transition: all 3s ease-in-out;
   }
 }
