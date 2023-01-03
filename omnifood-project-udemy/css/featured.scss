@@ -1,0 +1,52 @@
+.featured-in {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .container-featured-in {
+    display: flex;
+    max-width: 120rem;
+    gap: 8rem;
+    margin-top: 1rem;
+
+    .tech-crunch-logo {
+      max-width: 20rem;
+      height: 3rem;
+    }
+
+    .business-insider-logo {
+      max-width: 10rem;
+      height: 3rem;
+    }
+
+    .new-york-times-logo {
+      max-width: 23rem;
+      height: 3rem;
+    }
+
+    .forbes-logo {
+      max-width: 15rem;
+      height: 3rem;
+    }
+
+    .usa-today-logo {
+      max-width: 17rem;
+      height: 3rem;
+    }
+  }
+}
+
+.featured-in::after {
+  content: "";
+  border-top: 1px solid rgb(202, 202, 202);
+  width: 80%;
+  position: absolute;
+  bottom: -45%;
+}

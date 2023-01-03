@@ -1,0 +1,125 @@
+.how-it-works {
+  padding-top: 8rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 5rem;
+
+  img {
+    z-index: 3;
+    position: absolute;
+  }
+
+  .important-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 95rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+
+    .important-heading {
+      color: #cf711f;
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    .important-info {
+      color: #000;
+      font-size: 3.2rem;
+      margin: 0;
+    }
+  }
+
+  .container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+
+    img {
+      max-width: 20rem;
+    }
+
+    .custom {
+      margin-left: 25%;
+      text-align: end;
+    }
+
+    .custom-position {
+      left: 15%;
+    }
+
+    .how-it-works-info {
+      max-width: 58rem;
+      z-index: 3;
+
+      .important {
+        color: rgb(146, 144, 144);
+        font-size: 9rem;
+        margin: 3rem 0;
+      }
+
+      .important-info {
+        font-size: 3rem;
+        color: #000;
+        margin: 1rem 0;
+      }
+
+      p {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 4rem 0;
+        line-height: 3rem;
+      }
+    }
+
+    .img-box {
+      position: relative;
+    }
+
+    .img-box::before {
+      content: "";
+      display: block;
+      background-color: #fdf2e9;
+      left: -19rem;
+      top: -5rem;
+      padding-bottom: 20%;
+      border-radius: 50%;
+      width: 40rem;
+      height: 33rem;
+      position: absolute;
+      z-index: 1;
+      transition: all 1s;
+    }
+
+    .img-box:hover::before {
+      display: block;
+      transition: all 1s;
+      left: -10rem;
+      top: 4rem;
+    }
+
+    .img-box:hover::after {
+      display: block;
+      left: -5rem;
+      top: 8.6rem;
+      transition: all 1s;
+    }
+
+    .img-box::after {
+      content: "";
+      display: block;
+      background-color: #fae5d3;
+      left: -18rem;
+      top: 8.6rem;
+      padding-bottom: 30%;
+      border-radius: 50%;
+      height: 24rem;
+      width: 30rem;
+      position: absolute;
+      z-index: 2;
+      transition: all 1s;
+    }
+  }
+}

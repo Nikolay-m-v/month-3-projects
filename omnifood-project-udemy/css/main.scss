@@ -1,0 +1,58 @@
+@import "header.scss";
+@import "hero.scss";
+@import "featured.scss";
+@import "how-it-works.scss";
+@import "meals.scss";
+@import "testimonials.scss";
+@import "pricing.scss";
+@import "features.scss";
+@import "call-to-action.scss";
+@import "footer.scss";
+@import "queries.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 72.5%;
+  /* doesnt work on safari and microsoft edge */
+  /* scroll-behavior: smooth; */
+}
+
+body,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-size: contain;
+  overflow-x: hidden;
+  font-family: sans-serif;
+
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #fdf2e9;
+}
+
+.middle-page-section-container {
+  background-color: #fff;
+}

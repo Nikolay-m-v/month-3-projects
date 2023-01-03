@@ -1,0 +1,100 @@
+.pricing {
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.pricing .pricing-important {
+  max-width: 120rem;
+  margin: 5rem 23%;
+}
+.pricing .pricing-important .important-heading {
+  margin: 2rem 0;
+}
+.pricing .pricing-important .important-info {
+  font-size: 4.6rem;
+}
+.pricing .pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+.pricing .pricing-container .pricing-package {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 1px 3px 3px 3px rgb(189, 188, 188);
+  gap: 1rem;
+  background-color: #fdf2e9;
+  max-width: 60rem;
+  padding: 3rem 8rem;
+  border-radius: 10px;
+  line-height: 3rem;
+}
+.pricing .pricing-container .pricing-package:hover {
+  box-shadow: 1px 3px 3px 5px #c08a5b;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.pricing .pricing-container .best-value {
+  overflow: hidden;
+}
+.pricing .pricing-container .best-value::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -8%;
+  padding: 0.1rem 4rem;
+  transform: rotate(45deg);
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 3rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: #ffd43b;
+}
+.pricing .pricing-container .not-best-value {
+  background-color: #fff;
+}
+.pricing .pricing-container .pricing-package-info {
+  color: #cf711f;
+  font-size: 1.8rem;
+}
+.pricing .pricing-container .pricing-price {
+  color: #333;
+  font-size: 6.5rem;
+  font-family: initial;
+  margin: 0;
+}
+.pricing .pricing-container .pricing-info {
+  font-size: 1.8rem;
+}
+.pricing .pricing-container .pricing-deal {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  align-self: flex-start;
+  font-size: 1.8rem;
+}
+.pricing .pricing-container .pricing-deal img {
+  max-width: 2.5rem;
+}
+.pricing .pricing-container .pricing-deal .btn-cta {
+  color: #fff;
+  padding: 1.5rem 6rem;
+  background-color: #c77e3e;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.pricing .pricing-container .pricing-deal .btn-cta:hover {
+  background-color: #e67e22;
+}
+.pricing .taxes {
+  font-size: 1.6rem;
+}/*# sourceMappingURL=pricing.css.map */

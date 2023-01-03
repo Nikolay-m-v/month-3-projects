@@ -1,0 +1,64 @@
+.logo-navigation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+}
+.logo-navigation-header .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo-navigation-header .logo .logo-img {
+  max-width: 16rem;
+  height: 2.5rem;
+}
+.logo-navigation-header .header-navigation a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  font-size: 1.8rem;
+}
+.logo-navigation-header .header-navigation a:hover {
+  background-color: #e67e22;
+  color: #fff;
+  opacity: 0.9;
+  transition: ease-in-out 0.3s;
+}
+.logo-navigation-header .header-navigation .currently-active {
+  background-color: #e67e22;
+  color: #fff;
+}
+.logo-navigation-header .header-navigation ul {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  gap: 5px;
+}
+.logo-navigation-header .header-navigation .sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  padding: 0 4rem;
+  height: 6vh;
+  align-self: center;
+  justify-self: center;
+  z-index: 5;
+}
+.logo-navigation-header .btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.logo-navigation-header .btn-mobile-nav .icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.logo-navigation-header .btn-mobile-nav .hide-menu {
+  display: none;
+}/*# sourceMappingURL=header.css.map */

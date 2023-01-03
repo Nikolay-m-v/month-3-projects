@@ -1,0 +1,118 @@
+.pricing {
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  .pricing-important {
+    max-width: 120rem;
+    margin: 5rem 23%;
+
+    .important-heading {
+      margin: 2rem 0;
+    }
+
+    .important-info {
+      font-size: 4.6rem;
+    }
+  }
+
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+
+    .pricing-package {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: 1px 3px 3px 3px rgb(189, 188, 188);
+      gap: 1rem;
+      background-color: #fdf2e9;
+      max-width: 60rem;
+      padding: 3rem 8rem;
+      border-radius: 10px;
+      line-height: 3rem;
+
+      &:hover {
+        box-shadow: 1px 3px 3px 5px #c08a5b;
+        transition: box-shadow 0.5s ease-in-out;
+      }
+    }
+
+    .best-value {
+      overflow: hidden;
+
+      &::after {
+        content: "Best value";
+        position: absolute;
+        top: 6%;
+        right: -8%;
+        padding: 0.1rem 4rem;
+        transform: rotate(45deg);
+
+        font-size: 1.3rem;
+        font-weight: 700;
+        height: 3rem;
+        overflow: hidden;
+        text-transform: uppercase;
+        background-color: #ffd43b;
+      }
+    }
+
+    .not-best-value {
+      background-color: #fff;
+    }
+
+    .pricing-package-info {
+      color: #cf711f;
+      font-size: 1.8rem;
+    }
+
+    .pricing-price {
+      color: #333;
+      font-size: 6.5rem;
+      font-family: initial;
+      margin: 0;
+    }
+
+    .pricing-info {
+      font-size: 1.8rem;
+    }
+
+    .pricing-deal {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      align-self: flex-start;
+      font-size: 1.8rem;
+
+      img {
+        max-width: 2.5rem;
+      }
+
+      .btn-cta {
+        color: #fff;
+        padding: 1.5rem 6rem;
+        background-color: #c77e3e;
+        border: none;
+        border-radius: 10px;
+        font-size: 2rem;
+        margin-top: 3rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e67e22;
+        }
+      }
+    }
+  }
+
+  .taxes {
+    font-size: 1.6rem;
+  }
+}

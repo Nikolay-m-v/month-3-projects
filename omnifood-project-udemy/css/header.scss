@@ -1,0 +1,76 @@
+.logo-navigation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .logo-img {
+      max-width: 16rem;
+      height: 2.5rem;
+    }
+  }
+
+  .header-navigation {
+    a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      padding: 1rem 1rem;
+      border-radius: 8px;
+      font-size: 1.8rem;
+    }
+
+    a:hover {
+      background-color: #e67e22;
+      color: #fff;
+      opacity: 0.9;
+      transition: ease-in-out 0.3s;
+    }
+
+    .currently-active {
+      background-color: #e67e22;
+      color: #fff;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      font-size: 1rem;
+      gap: 5px;
+    }
+    .sticky .header {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 80%;
+      padding: 0 4rem;
+
+      height: 6vh;
+      align-self: center;
+      justify-self: center;
+      z-index: 5;
+    }
+  }
+
+  .btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+
+    .icon-mobile-nav {
+      height: 4.8rem;
+      width: 4.8rem;
+      color: #333;
+    }
+    .hide-menu {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.features {
+  padding: 10rem 0;
+}
+.features .features-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 4rem;
+  gap: 5rem;
+}
+.features .features-container .features-wrapper {
+  max-width: 30rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.features .features-container .features-wrapper img {
+  width: 4rem;
+  height: 4rem;
+}
+.features .features-container .features-wrapper h3 {
+  font-size: 2.6rem;
+  max-height: 22.5rem;
+  color: #000;
+  font-weight: 700;
+}
+.features .features-container .features-wrapper p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}/*# sourceMappingURL=features.css.map */

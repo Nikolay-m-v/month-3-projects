@@ -1,0 +1,97 @@
+.call-to-action {
+  display: flex;
+  justify-content: center;
+
+  .call-to-action-container {
+    display: flex;
+    border-radius: 10px;
+    margin: 10rem 0;
+    opacity: 0.8;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .cta-wrapper {
+      max-width: 81rem;
+      padding: 3rem 8rem;
+      background-color: #df8f4a;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      .cta-heading {
+        font-size: 4.5rem;
+        color: rgb(31, 30, 30);
+        margin-bottom: 3.2rem;
+      }
+
+      .cta-text {
+        font-size: 2rem;
+        margin-bottom: 4.8rem;
+        color: #333;
+      }
+
+      .cta-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.2rem;
+        row-gap: 2.4rem;
+
+        label {
+          display: block;
+          padding: 1rem 0;
+          font-size: 1.6rem;
+          color: #000;
+          font-weight: 700;
+        }
+
+        input {
+          padding: 1.3rem 0.5rem;
+          padding-right: 10rem;
+          border-radius: 6px;
+          text-align: start;
+          border: none;
+
+          &:focus {
+            /* border: 3px solid blue; */
+            box-shadow: 1px 1px 1px 3px blue;
+            border: none;
+          }
+        }
+
+        select {
+          border-radius: 6px;
+          padding: 1.3rem 0.5rem;
+          padding-right: 12rem;
+          cursor: pointer;
+        }
+
+        .btn {
+          border-radius: 6px;
+          background-color: #492606;
+          color: #fff;
+          font-size: 2rem;
+          padding: 0.3rem;
+          max-width: 27.7rem;
+          max-height: 5rem;
+          margin-top: 3.2rem;
+          border: none;
+          cursor: pointer;
+          transition: ease-in-out 0.3s;
+
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .cta-img {
+      max-width: 40rem;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}

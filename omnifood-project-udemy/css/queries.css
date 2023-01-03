@@ -1,0 +1,230 @@
+/* Below 1344px (smaller desktops) */
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .testimonials-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Below 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .important-heading {
+    font-size: 3.6rem;
+  }
+  .important-info {
+    font-size: 2.4rem;
+  }
+}
+/* Below 1100px (some layout overflows) */
+@media (max-width: 70em) {
+  .container-featured-in {
+    gap: 2rem;
+  }
+  .hero-img {
+    min-width: 30rem;
+  }
+  .how-it-works .container {
+    gap: 0;
+  }
+  .custom-position {
+    left: 7%;
+  }
+  .custom {
+    max-width: 40rem;
+  }
+}
+/* Under 944px tablets */
+@media (max-width: 940px) {
+  .btn-mobile-nav {
+    display: block;
+  }
+  .header-navigation {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(0%);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .header-navigation {
+    opacity: 0.9;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .hide-menu {
+    display: block;
+  }
+  .nav-open .show-menu {
+    display: none;
+  }
+  .header-navigation ul {
+    text-align: center;
+    flex-flow: column;
+    gap: 4.8rem;
+  }
+  .header-navigation a {
+    font-size: 3rem;
+  }
+  .footer-container {
+    gap: 0;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    max-width: 50rem;
+  }
+  .how-it-works-info {
+    max-width: 30rem;
+  }
+  .call-to-action {
+    justify-content: flex-start;
+    justify-content: center;
+  }
+  .call-to-action-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-wrapper {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .call-to-action img {
+    max-width: 64rem;
+    border-radius: 8px;
+  }
+  .cta-heading {
+    max-width: 60rem;
+  }
+  .cta-text {
+    max-width: 60rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-gallery {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-gallery .shown {
+    display: none;
+  }
+  .testimonials-gallery img {
+    max-width: 25rem;
+  }
+  .container {
+    max-width: 60rem;
+  }
+  .custom-position {
+    left: -15%;
+  }
+  .custom {
+    margin-left: 20%;
+  }
+  .customm {
+    margin-left: 25%;
+  }
+}
+@media (max-width: 750px) {
+  .customm {
+    margin: 0;
+  }
+  .container-featured-in {
+    display: flex;
+    flex-flow: column;
+    gap: 8rem;
+  }
+  .custom-position {
+    margin: 0;
+    order: 2;
+    left: 0;
+  }
+  .taxes {
+    max-width: 50rem;
+  }
+  .pricing-container {
+    gap: 5rem;
+  }
+  .meals-container {
+    flex-flow: column;
+  }
+  .meals .important-info {
+    max-width: 45rem;
+  }
+  .container {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .how-it-works {
+    align-items: center;
+    justify-content: center;
+  }
+  .img-box img {
+    position: relative;
+  }
+  .testimonials-gallery {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-gallery img {
+    max-width: 20rem;
+  }
+  .author-flexbox {
+    flex-flow: column;
+  }
+  .testimonials-gallery .hidden-under-certain-width {
+    display: none;
+  }
+  .pricing-container {
+    flex-flow: column;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .footer-important {
+    max-width: 55rem;
+  }
+  .footer-important {
+    max-width: 55rem;
+  }
+}
+/* Below 600px idk what under 600px even supports */
+@media (max-width: 40em) {
+  .container-featured-in {
+    flex-flow: column;
+    gap: 5rem;
+  }
+  .testimonials-gallery .shown {
+    display: block;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .custom {
+    left: 10%;
+  }
+}/*# sourceMappingURL=queries.css.map */
