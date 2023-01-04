@@ -1,7 +1,8 @@
 .testimonials {
   background-color: #fdf2e9;
 }
-.testimonials .testimonials-container {
+
+.testimonials-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -9,58 +10,63 @@
   gap: 10rem;
   padding: 5rem 10rem;
 }
-.testimonials .testimonials-container .testimonials-reviews {
+
+.testimonials-reviews {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
 }
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox-info {
+
+.author-flexbox {
+  display: flex;
+  gap: 10rem;
+}
+
+.author-flexbox-info {
   display: flex;
   flex-flow: column;
   gap: 1rem;
 }
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox-info .important-heading {
+.author-flexbox-info .important-heading {
   margin: 0;
   font-size: 1.8rem;
 }
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox-info .important-info {
+.author-flexbox-info .important-info {
   font-size: 5rem;
   font-weight: 700;
   max-width: 75rem;
 }
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox {
-  display: flex;
-  gap: 10rem;
-}
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox .author-reviews {
+
+.author-reviews {
   height: 100%;
 }
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox .author-reviews p {
+.author-reviews p {
   color: #333;
   font-size: 2rem;
   line-height: 3.5rem;
   margin: 1rem 0;
 }
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox .author-reviews .testimonials-author {
+.author-reviews .testimonials-author {
   color: #555;
 }
-.testimonials .testimonials-container .testimonials-reviews .author-flexbox .author-reviews .testimonials-img {
+.author-reviews .testimonials-img {
   max-width: 7rem;
   border-radius: 50%;
 }
-.testimonials .testimonials-container .testimonials-gallery {
+
+.testimonials-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   align-items: center;
   justify-content: center;
 }
-.testimonials .testimonials-container .testimonials-gallery img {
+.testimonials-gallery img {
   width: 100%;
   display: block;
 }
-.testimonials .testimonials-container .testimonials-gallery img:hover {
+.testimonials-gallery img:hover {
   transform: rotate(10deg);
   transition: border-radius 1s, transform 1s;
   cursor: pointer;

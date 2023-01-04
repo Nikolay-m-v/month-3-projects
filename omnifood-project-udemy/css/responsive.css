@@ -1,0 +1,25 @@
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+  html .testimonials-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .testimonials-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 70%;
+  }
+}/*# sourceMappingURL=responsive.css.map */

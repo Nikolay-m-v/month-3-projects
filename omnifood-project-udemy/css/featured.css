@@ -12,7 +12,7 @@
 .featured-in .container-featured-in {
   display: flex;
   max-width: 120rem;
-  gap: 8rem;
+  gap: 4rem;
   margin-top: 1rem;
 }
 .featured-in .container-featured-in .tech-crunch-logo {
