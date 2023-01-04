@@ -1,18 +1,8 @@
 @import "config.scss";
 
 html {
-  @include tablet-landscape-up {
-    font-size: 50%;
-  }
-}
-
-html {
-  @include desktop-up {
+  @include big-desktop-up {
     font-size: 62.5%;
-
-    .testimonials-gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
   }
 }
 
@@ -20,10 +10,170 @@ html {
   .testimonials-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .testimonials-container {
+    align-items: normal;
+  }
 }
 
-@include big-desktop-up {
-  html {
-    font-size: 70%;
+html {
+  @include desktop-up {
+    font-size: 52.5%;
+  }
+}
+
+html {
+  @include tablet-landscape-up {
+    font-size: 40%;
+
+    .testimonials-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-mobile-nav {
+      display: block;
+    }
+
+    .header-navigation {
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(0%);
+      backdrop-filter: blur(10px);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in;
+
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    .nav-open .header-navigation {
+      opacity: 0.9;
+      pointer-events: auto;
+      visibility: visible;
+    }
+
+    .nav-open .hide-menu {
+      display: block;
+    }
+
+    .nav-open .show-menu {
+      display: none;
+    }
+    .header-navigation ul {
+      text-align: center;
+      flex-flow: column;
+      gap: 4.8rem;
+    }
+
+    .header-navigation a {
+      font-size: 3rem;
+    }
+
+    .footer-container {
+      gap: 0;
+    }
+
+    .page-wrapper .hero {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-img-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-img {
+      max-width: 50rem;
+    }
+
+    .how-it-works .container {
+      margin: 5rem auto;
+      padding-right: 5rem;
+    }
+    .how-it-works-info {
+      max-width: 30rem;
+    }
+
+    .call-to-action {
+      justify-content: flex-start;
+      justify-content: center;
+    }
+
+    .call-to-action-container {
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-wrapper {
+      padding: 1rem 2rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .call-to-action img {
+      max-width: 64rem;
+      border-radius: 8px;
+    }
+
+    .cta-heading {
+      max-width: 60rem;
+    }
+
+    .cta-text {
+      max-width: 60rem;
+    }
+
+    .cta-form {
+      grid-template-columns: 1fr;
+    }
+
+    .testimonials-gallery img {
+      max-width: 25rem;
+    }
+
+    .container {
+      max-width: 60rem;
+    }
+
+    .custom-position {
+      left: -15%;
+    }
+
+    .custom {
+      margin-left: 20%;
+    }
+
+    .customm {
+      margin-left: 25%;
+    }
+  }
+}
+
+html {
+  @include for-phones {
+    font-size: 40%;
+
+    .meals-container {
+      padding-left: 6rem;
+    }
+
+    .pricing .pricing-container {
+      gap: 5rem;
+    }
+    .featured-in .container-featured-in {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
