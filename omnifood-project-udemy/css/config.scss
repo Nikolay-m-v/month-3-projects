@@ -22,8 +22,14 @@
   }
 }
 
-@mixin big-desktop-up {
+@mixin big-desktop {
   @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin big-desktop-up {
+  @media screen and (min-width: 1800px) {
     @content;
   }
 }

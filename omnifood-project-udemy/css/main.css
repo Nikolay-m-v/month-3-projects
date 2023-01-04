@@ -796,9 +796,15 @@ footer::before {
   flex-basis: 0;
 }
 
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 66.5%;
+  }
+}
+
 @media screen and (max-width: 1800px) {
   html {
-    font-size: 62.5%;
+    font-size: 55%;
   }
 }
 
