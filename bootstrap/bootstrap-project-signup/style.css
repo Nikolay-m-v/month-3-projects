@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f68b1c;
+  padding: 0.3rem 0.3rem;
+  border-radius: 4px;
+}
+header img {
+  width: 30px;
+  height: 38px;
+}
+header .logo {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.navigation ul {
+  list-style: none;
+  margin-right: 0.5rem;
+}
+.navigation li {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+li div {
+  width: 1.6rem;
+  height: 2px;
+  background: #fff;
+  margin: 4px 0;
+  transition: all 0.6s;
+}
+
+.bar3 {
+  transition: all 0.2s;
+}
+
+.change .bar1 {
+  transform: translate(0, 4px) rotate(-215deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -8px) rotate(215deg);
+}
+
+.show .hidden {
+  transform: translate(0px);
+}
+
+.hidden li {
+  list-style: none;
+  position: absolute;
+  right: -200px;
+}
+
+.container {
+  position: relative;
+}
+
+.main-hidden-nav::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 90%;
+  background-color: #000;
+}/*# sourceMappingURL=style.css.map */
