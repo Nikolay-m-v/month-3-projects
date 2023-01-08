@@ -5,7 +5,6 @@
 
 body {
   font-family: sans-serif;
-  position: relative;
   overflow-x: hidden;
 }
 
@@ -89,4 +88,153 @@ li div {
   height: 3px;
   width: 90%;
   background-color: #000;
+}
+
+.important {
+  margin: 5rem 0 0 1rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.input-section {
+  background-color: #fef9e2;
+
+  height: 32rem;
+  margin: 1.1rem;
+  padding: 1rem 1rem;
+
+  span {
+    color: red;
+  }
+
+  h4 {
+    margin-top: 1rem;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
+
+  &.custom {
+    flex-flow: row;
+    flex-grow: 1;
+  }
+
+  .first-name {
+    width: 70%;
+  }
+
+  .last-name {
+    margin-left: 1rem;
+  }
+}
+
+.form-control {
+  width: 100%;
+  height: 2rem;
+  border-radius: 4px;
+  border: 1px solid rgb(197, 193, 193);
+  padding: 0 8px;
+}
+
+.recaptcha {
+  margin-top: 1.5rem;
+}
+
+.tos-pp {
+  font-size: 10px;
+  margin-bottom: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: #f68d14;
+
+    &:hover {
+      text-decoration: underline;
+      color: #c06e11;
+    }
+  }
+}
+
+.btn {
+  background-color: #a8bb36;
+  color: #fff;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.login-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin-right: 0.5rem;
+    color: #f68d14;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+      color: #c06e11;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+
+  a {
+    padding: 1rem 8rem;
+    text-decoration: none;
+    list-style: none;
+    color: #f68d14;
+    background-color: #ebebeb;
+    text-align: center;
+    font-size: 12px;
+
+    &:hover {
+      color: #a8bb36;
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 0 1px #fff, 0 -1px #a96929;
+  }
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+
+  li {
+    width: 20%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    background-color: #ebebeb;
+    border: solid 1px #fff;
+  }
+}
+
+.orange-line {
+  position: absolute;
+  bottom: 0;
+  background-color: #f68b1c;
+  height: 1rem;
+  width: 100%;
 }
